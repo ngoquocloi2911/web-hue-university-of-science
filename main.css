@@ -1,0 +1,449 @@
+/* */
+*{
+    /* không nhận được hơ hơ */
+    box-sizing: border-box;
+    
+}
+/* Định dạng css ở body */
+
+body{
+    /* Định dạng kiểu chữ */
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 980px;
+    height: auto;
+}
+@media all and (max-width: 320px) {
+  body {
+     background: #f1f1f1;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 860px)
+ {
+  body {
+    background: #f1f1f1;
+       }
+ }
+
+
+.row{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+
+/* định dạng css ở header */
+
+.header{
+  background-color: #022a4f;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+    margin-top: -20px;
+    margin-left: -10px;
+   
+    margin-bottom: -20px;
+    width: 101%;
+}
+/* thanh trên cùng header */
+.hitec{
+    background: #353535;
+    padding: 2px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+   
+}
+
+/* thanh tiêu đề */
+.title h1{ 
+    font-size: 20px;
+    text-align: left;
+    margin: 10PX;
+    padding: 5PX;
+    padding-bottom: 0px;
+}
+/* thanh ngày tháng */
+.date{
+    font-size: 16px;
+    text-align: right;
+    margin-top: -35px;
+    padding: 5PX;
+}
+.menu{
+  overflow: hidden;
+  background-color: #022a4f;
+  font-family: Arial;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: -10px;
+  padding: bottom 0;
+  width: 100%;
+  height: 40px;
+ 
+}
+
+
+
+/* logo */
+.logo{
+    
+    border-right: 1px solid #fff;
+    padding: 18px 0px;
+    float: left;
+    padding-top: 10px 10px;
+    font-size: 10px;
+    line-height: 18px;
+    margin-top: -10px;
+    padding-left: 0px;
+    padding-right: 30px;
+
+}
+/* thanh navigation */
+.navbar {
+  border-right: 1px solid #fff;
+  background-color: #022a4f;
+  float: left;
+  font-size: 16px;
+  font-family: inherit;
+  overflow: hidden;
+  margin: 0;
+  padding-top: 0px;
+  display: block;
+  text-decoration:none;
+  
+ 
+
+}
+
+  
+  /* đường dẫn bên trong navigation */
+  .navbar a {
+    
+    font-size: 14px;
+    float: left;
+    padding: -10px;
+    text-decoration: overline;
+  }
+  
+  /* thành phần dropdown */
+  
+  .dropdown {
+    font-size: 16px;
+    padding-left: -20px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* nút dropdown */
+  
+  .chunoi{
+    color: #0080ff;
+    float: left;
+  }
+  .nut_dropdown{
+    
+    width: 170px;
+    height: 50px;
+    background-color: #022a4f;
+    color: #fff;
+   
+  }
+  .nut_dropdown:hover {
+    background-color: #f1f1f1;  
+    color: #0a0c0f;
+  }
+  
+  /* thêm màu background khi nút dropdown khi hover */
+ 
+
+  
+  /* Ẩn nội dung dropdown*/
+  .noidung_dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-left: 0px;
+  }
+  
+  /* thiết lập style cho đường dẫn bên trong dropdown */
+  .noidung_dropdown a {
+    float: none;
+    color: black;
+    padding: 7px ;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* chọn background cho đường dẫn bên trong dropdown khi hover*/
+  .noidung_dropdown a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Hiển thị nội dung dropdown khi được hover */
+  .dropdown:hover .noidung_dropdown {
+    display: block;
+  }
+.nienkhoachung{
+ background-color: #d7dade;
+ width:104% ;
+ height: 30px;
+margin-top: -20px;
+margin-left: -18px;
+ 
+
+ 
+
+
+
+
+  
+}
+.nienkhoa{
+  list-style: none;
+  padding-left: 0;
+  
+}
+
+
+.nienkhoa a{
+  position: relative;
+  float: right;
+  font-size: 17px;
+  background-color: #ddd;
+  margin-top: 0px;
+  color: #ae0a0a;
+  font-weight: bold;
+  text-decoration: none;
+ 
+  padding: 5px;
+  padding-left: 30px;
+}
+.nienkhoa a::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nienkhoa .hk a::before{
+  background-image: url("img/5807616.png");
+}
+
+.nienkhoa .chuyennganh a::before{
+  background-image: url("img/3145765.png");
+}
+
+.nienkhoa .khoa a::before{
+  background-image: url("img/1940569.png");
+}
+
+
+ 
+
+/* Định dạng css ở nav */
+.nav{
+    /* Căn trái*/
+    float: left;
+    /* Độ rộng */
+    width: 250px;
+    max-width: 100%;
+    min-height: 1500px;
+    /* Độ cao*/
+    height: 100%;
+    /* Màu nền */
+    background: #d7dade;
+    /* */
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-left: -10px;
+    padding-right: 10px;
+
+
+}
+/* Tạo kiểu cho danh sách bên trong menu */
+.sidebarhead{
+    /* Bỏ kiểu dấu chấm ở trước*/
+    list-style: none;
+    /* Cách khung bên trong bao nhiêu đó, ở đây là không cách*/
+    padding-left: 0;
+    
+    
+
+}
+.sidebarhead a{
+  /* Bỏ dấu gạch chân*/
+  position: relative;
+  padding-left: 30px;
+  text-decoration: none;
+  float: none;
+  line-height: 1.8;
+  color: #0a0c0f;
+}
+.sidebarhead .email{
+  padding-right: 45PX;
+}
+
+.sidebarhead a::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.sidebarhead a::after{
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  right: 1%;
+  top: 10%;
+  
+  transform: translateY(-10%);
+
+}
+
+.sidebarhead .email::after{
+  background-image: url("img/new.gif");
+  right: 0;
+  top: 10%;
+  width: 40PX;
+
+  
+}
+
+
+.sidebarhead .thongbao::before{
+  background-image: url("img/724927.png");
+  left: 0;
+  top: 5%;
+  
+}
+
+.sidebarhead .lylich::before{
+  background-image: url("img/12345.png");
+}
+
+.sidebarhead .mk::before{
+  background-image: url("img/807241.png");
+}
+
+.sidebarhead .logout::before{
+  background-image: url("img/1828490.png");
+}
+
+.sidebarhead .news::before{
+  background-image: url("img/2540832.png");
+}
+
+.sidebarhead .thoikhoabieu::before{
+  background-image: url("img/5807616.png");
+  
+}
+
+.sidebarhead .messages::before{
+  background-image: url("img/2190552.png");
+}
+
+.sidebarhead .email::before{
+  background-image: url("img/732200.png");
+}
+
+.sidebarhead a:hover{
+  color: #ae0a0a
+
+}
+.sidebartitle{
+  font-size: 17px;
+  color: #023b74;
+  font-weight: bold;
+  padding-left: -20px;
+  
+}
+.article{
+    float: left;
+    padding: 10px;
+    width: 85%;
+    background-color:#f1f1f1;
+    height: 100%;
+    margin-right: -20px;
+    font-size: 0;
+    min-height: 1500px;
+    border: 1px solid #d9d9d9 ;
+}
+.art{
+  margin-right: -20px;
+  font-size: 17px;
+}
+.content a{
+  text-decoration: none;
+  color: #0261c1;
+  font-weight: bold;
+  line-height: 1.8;
+}
+.content a:hover{
+  color: #022a4f;
+}
+.content b{
+  color: #464545;
+  font-size: 13px;
+  
+}
+.content p{
+  line-height: 1.2  ;
+  font-size: 14px;
+}
+/* Xóa số float sau các cột*/
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+footer{
+    background-color:#054073;
+    padding: 10px;
+    text-align: center;
+    color: wheat;
+    font-size: 0;
+}
+.format{
+  font-size: 12px;
+  color: #fffefe;
+}
+.format a{
+  text-decoration: none;
+  color: #fffefe;
+}
+.format a:hover{
+  text-decoration: underline;
+}
+/* Bố cục đáp ứng - làm cho hai cột/hộp xếp chồng lên nhau thay vì cạnh nhau, trên màn hình nhỏ */
+@media (max-width: 600px){
+    nav,article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
